@@ -1,0 +1,172 @@
+ 
+ <!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Mulugeta Fisiha, Web Developer, Portfolio, HTML, CSS, JavaScript, Gondar University"> 
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init({
+        publicKey: "qpYHLZY60u-EfkuY"  // ✅ Your Public Key
+      });
+    })();
+  </script>
+</head>
+<body>
+
+<header> 
+  <div class="logo">Mulugeta Fisiha</div> 
+  <input type="checkbox" id="menu-toggle"> 
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <nav class="nav-list"> 
+    <ul> 
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li> 
+      <li><a href="#skills">Skills</a></li> 
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#projects">project</a></li>
+    </ul>
+  </nav>
+</header> 
+
+
+<div class="home fade-in" id="home">
+  <div class="content"> 
+    <h1>Hi, I'm <span>Mulugeta Fisiha</span></h1>
+    <p>I am a web developer skilled in HTML, CSS, JavaScript, and other modern programming languages.</p> 
+    <a href="#contact" class="btn">Hire Me</a> 
+  </div> 
+  <div class="home-img">
+    <img src="muler.jpg" alt="Mulugeta Fisiha" id="profile-img">
+  </div>
+</div>
+
+
+<div class="about fade-in" id="about">
+  <h2>About Me</h2>
+  <p>I live in Gondar and study Computer Science at the University of Gondar. I am currently a 3rd-year student passionate about web development and technology innovation.</p> 
+  <p>In the learning process, C++ programming is the basic course for me. I worked on a library management and ATM transaction system in a DSA course. Next semester, I will learn Java in OOP and build a project — learning Java is easier by understanding JavaScript object declaration currently.</p>
+  <p>My goal is to become a full-stack developer by the end of this year and advance into a software developer specializing in modern programming languages.</p>
+</div>
+
+
+<div class="skills fade-in" id="skills">
+  <h2>My Skills</h2> 
+  <div class="skill-list">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div> 
+    <div class="skill">JavaScript</div>
+    <div class="skill">C++</div> 
+    <div class="skill">Java</div> 
+  </div> 
+</div>
+
+
+
+
+<div class="projects fade-in" id="projects">
+  <h2>My Projects</h2>
+  <div class="project-list">
+
+    <div class="project-card">
+      <h3>ATM Transaction System</h3>
+      <div class="atm">
+        <img src="system.jpg">
+      </div>
+      
+      <p>A C++ project implementing deposit, withdrawal, fund transfer, balance checking, and transaction history features using linked lists, searching, and sorting algorithms.</p>
+      <a href="https://github.com/befather7-sudo/ATM-System" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Library Management System</h3>
+      <div class="java">
+        <img src="library.png">
+      </div>
+      
+      <p>A Java-based system allowing book and magazine management, member registration, and transaction tracking using OOP concepts and serialization.</p>
+      <a href="https://github.com/befather7-sudo/Library-System" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>This responsive portfolio website showcases my skills, projects, and contact information. Built with HTML, CSS, and JavaScript, featuring smooth animations and EmailJS integration.</p>
+      <a href="#" class="btn">Live Demo</a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="contact-section fade-in" id="contact">
+  <h2>Get In Touch</h2> 
+  <div class="contact-container">
+
+    
+    <div class="social-media">
+      <h3>Connect With Me</h3>
+      <div class="social-links">
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/mulugeta-fisiha" target="_blank" class="social-link linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <p>LinkedIn</p>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/befather7-sudo" target="_blank" class="social-link github">
+            <i class="fab fa-github"></i>
+          </a>
+          <p>GitHub</p>
+        </div>
+        <div class="social-item">
+          <a href="https://t.me/GOD272921" target="_blank" class="social-link telegram">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+          <p>Telegram</p>
+        </div>
+        <div class="social-item">
+          <a href="https://www.facebook.com/mulugeta-fisiha" target="_blank" class="social-link facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <p>Facebook</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="contact">
+      <h3>Contact Me</h3>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="phone" placeholder="Phone Number (Ethiopian)" required>
+        <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form> 
+      <p id="form-message"></p>
+    </div>
+  </div>
+</div>
+
+<footer> 
+  <p>© 2025 Mulugeta Fisiha | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+ 
+
+
+
+
+ 
